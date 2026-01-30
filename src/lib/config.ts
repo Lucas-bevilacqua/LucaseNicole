@@ -1,6 +1,35 @@
 // Configuração editável do site - Lucas & Nicole
 
-export const siteConfig = {
+interface Padrinho {
+  name: string;
+  relation: string;
+  image: string;
+}
+
+export const siteConfig: {
+  bifeUrl: string;
+  weddingDate: string;
+  weddingDateShort: string;
+  weddingDayOfWeek: string;
+  ceremonyTime: string;
+  locationName: string;
+  locationAddress: string;
+  locationNeighborhood: string;
+  locationCity: string;
+  locationCEP: string;
+  locationFull: string;
+  googleMapsUrl: string;
+  googleMapsDirections: string;
+  whatsapp: string;
+  email: string;
+  instagram: string;
+  hashtag: string;
+  pixKey: string;
+  pixCopiaECola: string;
+  pixQrCodeImage: string;
+  giftLists: { name: string; url: string; logo: string }[];
+  padrinhos: Padrinho[];
+} = {
   // RSVP - Link para confirmação de presença
   bifeUrl: 'https://sistema.buffetmais.com/RSVP/HtpaMswlCuKqFUeVznrOmPwrbiAJiE',
 
