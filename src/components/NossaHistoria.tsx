@@ -14,7 +14,7 @@ const moments = [
     side: 'left',
   },
   {
-    year: '2021',
+    year: '2023',
     title: 'Quando Lucas decidiu pedir',
     description: 'Essa noite foi quando Lucas decidiu que ia pedir ela em namoro. O momento em que tudo ganhou outro rumo.',
     image: '/pedido-namoro.png',
