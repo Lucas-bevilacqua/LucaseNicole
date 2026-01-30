@@ -1,8 +1,8 @@
 // Configuração editável do site - Lucas & Nicole
 
 export const siteConfig = {
-  // RSVP - Link para o site do Bife (configurável)
-  bifeUrl: 'https://bife.app/casamento/lucasenicole',
+  // RSVP - Link para confirmação de presença
+  bifeUrl: 'https://sistema.buffetmais.com/RSVP/HtpaMswlCuKqFUeVznrOmPwrbiAJiE',
 
   // Data e local
   weddingDate: '07 de Novembro de 2026',
