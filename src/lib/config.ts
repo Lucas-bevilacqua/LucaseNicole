@@ -33,4 +33,12 @@ export const siteConfig = {
     { name: 'Amazon', url: 'https://www.amazon.com.br', logo: '' },
     { name: 'Magalu', url: 'https://www.magazineluiza.com.br', logo: '' },
   ],
+
+  // Padrinhos e Madrinhas
+  // Adicione conforme forem sendo definidos
+  padrinhos: [
+    // Exemplo:
+    // { name: 'João Silva', relation: 'Amigo de infância', image: '/padrinhos/joao.jpg' },
+    // { name: 'Maria Santos', relation: 'Prima', image: '/padrinhos/maria.jpg' },
+  ],
 };
