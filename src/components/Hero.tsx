@@ -39,7 +39,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          É com grande alegria que convidamos
+          Celebrando o amor
         </motion.p>
 
         <h1 className="font-serif text-[clamp(3rem,12vw,7rem)] font-semibold leading-[0.95] tracking-[0.02em]">
