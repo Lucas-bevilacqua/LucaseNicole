@@ -21,7 +21,7 @@ const moments = [
     side: 'left',
   },
   {
-    year: '2021',
+    year: '2023',
     title: 'O dia do pedido de namoro',
     description: 'O dia em que Lucas pediu ela em namoro. Uma noite especial, com a cidade aos nossos pés e o começo de nossa história a dois.',
     image: '/dia-pedido-namoro-selfie.png',
@@ -42,21 +42,21 @@ const moments = [
     side: 'right',
   },
   {
-    year: '2022',
+    year: '2023',
     title: 'A primeira viagem de aniversário',
     description: 'A Nicole deu de presente de aniversário do Lucas a primeira viagem dos dois. A partir dessa, combinamos: todo aniversário o presente seria uma viagem. E assim virou nossa tradição.',
     image: '/primeira-viagem-aniversario.png',
     side: 'left',
   },
   {
-    year: '2022',
+    year: '2024',
     title: 'A viagem de aniversário da Nicole',
     description: 'O Lucas deu de presente de aniversário da Nicole uma viagem à praia. A tradição já tinha começado: todo aniversário, uma viagem juntos.',
     image: '/viagem-aniversario-nicole.png',
     side: 'right',
   },
   {
-    year: '2022',
+    year: '2024',
     title: 'A primeira viagem que marcou: Ushuaia',
     description: 'Fomos para Ushuaia. Neve, frio, fim do mundo — e a certeza de que juntos a gente vai longe. Foi a viagem que marcou.',
     image: '/ushuaia.png',
