@@ -34,7 +34,7 @@ export default function Hero() {
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       >
         <motion.p
-          className="font-serif text-sm md:text-base tracking-[0.35em] uppercase text-gold-premium mb-6"
+          className="font-serif text-xs sm:text-sm md:text-base tracking-[0.25em] sm:tracking-[0.35em] uppercase text-gold-premium mb-4 sm:mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
@@ -42,19 +42,19 @@ export default function Hero() {
           Celebrando o amor
         </motion.p>
 
-        <h1 className="font-serif text-[clamp(3rem,12vw,7rem)] font-semibold leading-[0.95] tracking-[0.02em]">
+        <h1 className="font-serif text-[clamp(2.5rem,10vw,7rem)] font-semibold leading-[0.95] tracking-[0.02em]">
           Lucas <span className="text-gold-premium font-normal">&</span> Nicole
         </h1>
 
         <motion.div
-          className="w-20 h-px bg-gradient-to-r from-transparent via-gold-premium to-transparent mx-auto mt-8 mb-6"
+          className="w-16 sm:w-20 h-px bg-gradient-to-r from-transparent via-gold-premium to-transparent mx-auto mt-5 sm:mt-8 mb-4 sm:mb-6"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.7, duration: 0.8, ease: 'easeOut' }}
         />
 
         <motion.p
-          className="font-serif text-2xl md:text-3xl lg:text-4xl text-gold-100 tracking-wide"
+          className="font-serif text-lg sm:text-2xl md:text-3xl lg:text-4xl text-gold-100 tracking-wide"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9, duration: 0.6 }}
@@ -62,7 +62,7 @@ export default function Hero() {
           {siteConfig.weddingDate}
         </motion.p>
         <motion.p
-          className="font-sans text-lg md:text-xl mt-3 text-white-off/90 tracking-wide"
+          className="font-sans text-sm sm:text-lg md:text-xl mt-2 sm:mt-3 text-white-off/90 tracking-wide"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.6 }}

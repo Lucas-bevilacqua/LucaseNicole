@@ -36,7 +36,7 @@ export default function GaleriaFotos() {
     <SectionWrapper id="galeria" className="bg-white-off">
       <SectionTitle title="Momentos Especiais" />
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6">
         {fotos.map((src, i) => (
           <motion.button
             key={i}

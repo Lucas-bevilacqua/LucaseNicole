@@ -83,18 +83,19 @@ export default function NossaHistoria() {
     <SectionWrapper id="nossa-historia" className="bg-white-off">
       <SectionTitle title="Nossa História" />
 
-      <div className="space-y-24 md:space-y-32">
+      <div className="space-y-16 md:space-y-32">
         {moments.map((moment, i) => (
           <motion.article
-            key={moment.year}
-            className={`flex flex-col gap-8 md:gap-12 ${moment.side === 'right' ? 'md:flex-row-reverse' : 'md:flex-row'} items-center`}
-            initial={{ opacity: 0, x: moment.side === 'left' ? -30 : 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            key={`${moment.year}-${i}`}
+            className={`flex flex-col gap-6 md:gap-12 ${moment.side === 'right' ? 'md:flex-row-reverse' : 'md:flex-row'} items-center`}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex-1 w-full max-w-md">
-              <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-luxe border border-olive-dark/10 p-1.5 bg-cream">
+            {/* Mobile: Foto primeiro, Texto depois | Desktop: alternado conforme side */}
+            <div className="flex-1 w-full max-w-xs sm:max-w-sm md:max-w-md order-1 md:order-none">
+              <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-luxe border border-olive-dark/10 p-1 md:p-1.5 bg-cream">
                 <Image
                   src={moment.image}
                   alt={moment.title}
@@ -104,14 +105,14 @@ export default function NossaHistoria() {
                 />
               </div>
             </div>
-            <div className="flex-1 text-center md:text-left">
-              <span className="font-serif text-2xl md:text-3xl text-gold-premium font-semibold tracking-wide">
+            <div className="flex-1 text-center md:text-left order-2 md:order-none px-2 sm:px-0">
+              <span className="font-serif text-xl sm:text-2xl md:text-3xl text-gold-premium font-semibold tracking-wide">
                 {moment.year}
               </span>
-              <h3 className="font-serif text-2xl md:text-3xl text-olive-950 mt-2 font-semibold">
+              <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-olive-950 mt-1 md:mt-2 font-semibold leading-tight">
                 {moment.title}
               </h3>
-              <p className="text-body-lg text-gray-dark mt-4 leading-relaxed">
+              <p className="text-body md:text-body-lg text-gray-dark mt-3 md:mt-4 leading-relaxed">
                 {moment.description}
               </p>
             </div>

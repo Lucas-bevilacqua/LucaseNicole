@@ -59,18 +59,18 @@ export default function Countdown({ targetDate }: CountdownProps) {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
     >
-      <p className="font-serif text-2xl md:text-3xl text-olive-950 text-center mb-8">
+      <p className="font-serif text-xl sm:text-2xl md:text-3xl text-olive-950 text-center mb-6 md:mb-8 px-2">
         Faltam <span className="font-semibold text-gold-premium">{timeLeft.days}</span> dias para o grande dia!
       </p>
-      <div className="flex justify-center gap-5 md:gap-10 flex-wrap">
+      <div className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-10 max-w-md mx-auto">
         {units.map(({ value, label }) => (
           <div key={label} className="text-center">
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl bg-olive-950/5 flex items-center justify-center border border-olive-dark/15">
-              <span className="font-serif text-2xl md:text-3xl font-semibold text-olive-950">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto rounded-lg md:rounded-xl bg-olive-950/5 flex items-center justify-center border border-olive-dark/15">
+              <span className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-olive-950">
                 {String(value).padStart(2, '0')}
               </span>
             </div>
-            <span className="block mt-2 text-body text-gray-warm font-medium">{label}</span>
+            <span className="block mt-1.5 md:mt-2 text-xs sm:text-sm md:text-base text-gray-warm font-medium">{label}</span>
           </div>
         ))}
       </div>

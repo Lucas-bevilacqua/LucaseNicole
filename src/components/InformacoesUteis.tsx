@@ -84,7 +84,7 @@ export default function InformacoesUteis() {
     <SectionWrapper id="informacoes-uteis" className="bg-cream">
       <SectionTitle title="Informações Úteis" />
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-5 md:gap-8">
         {cards.map((card, i) => (
           <motion.article
             key={card.id}
@@ -94,13 +94,13 @@ export default function InformacoesUteis() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.08, duration: 0.5 }}
           >
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-full bg-olive-950/8 flex items-center justify-center border border-olive-dark/10">
-                <card.icon className="w-7 h-7 text-olive-dark" strokeWidth={1.5} />
+            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-olive-950/8 flex items-center justify-center border border-olive-dark/10 flex-shrink-0">
+                <card.icon className="w-6 h-6 md:w-7 md:h-7 text-olive-dark" strokeWidth={1.5} />
               </div>
-              <h3 className="font-serif text-2xl text-olive-950 font-semibold">{card.title}</h3>
+              <h3 className="font-serif text-xl md:text-2xl text-olive-950 font-semibold">{card.title}</h3>
             </div>
-            <div className="text-body text-gray-dark leading-relaxed">{card.content}</div>
+            <div className="text-sm md:text-body text-gray-dark leading-relaxed">{card.content}</div>
           </motion.article>
         ))}
       </div>

@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import NossaHistoria from '@/components/NossaHistoria';
 import OGrandeDia from '@/components/OGrandeDia';
-import DressCode from '@/components/DressCode';
 import ConfirmarPresenca from '@/components/ConfirmarPresenca';
 import ListaPresentes from '@/components/ListaPresentes';
 import Padrinhos from '@/components/Padrinhos';
@@ -18,7 +17,6 @@ export default function Home() {
       <Hero />
       <NossaHistoria />
       <OGrandeDia />
-      <DressCode />
       <ConfirmarPresenca />
       <ListaPresentes />
       <Padrinhos />

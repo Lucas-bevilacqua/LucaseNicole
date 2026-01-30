@@ -18,7 +18,7 @@ export default function SectionWrapper({
   return (
     <motion.section
       id={id}
-      className={`py-section-mobile md:py-section ${noPadding ? '' : 'px-6 md:px-10'} max-w-6xl mx-auto ${className}`}
+      className={`py-12 sm:py-16 md:py-section ${noPadding ? '' : 'px-4 sm:px-6 md:px-10'} max-w-6xl mx-auto ${className}`}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
