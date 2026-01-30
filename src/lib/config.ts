@@ -25,7 +25,8 @@ export const siteConfig = {
   hashtag: '#LucasENicole2026',
 
   // PIX (para seção de presentes)
-  pixKey: '', // Chave PIX (email, CPF ou telefone)
+  pixKey: 'nicolefecerqueira@outlook.com',
+  pixCopiaECola: '00020126510014br.gov.bcb.pix0129nicolefecerqueira@outlook.com5204000053039865802BR5925NICOLE FERREIRA CERQUEIRA6009Sao Paulo62290525REC697D40EAB3C060051148486304F0A5',
   pixQrCodeImage: '', // URL da imagem do QR Code ou path
 
   // Lista de presentes (links externos)

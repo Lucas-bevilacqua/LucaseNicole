@@ -1,15 +1,29 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Gift, Copy } from 'lucide-react';
+import { Gift, Copy, Check } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import SectionTitle from './SectionTitle';
 import { siteConfig } from '@/lib/config';
 
 export default function ListaPresentes() {
-  const copyPix = () => {
+  const [copiedKey, setCopiedKey] = useState(false);
+  const [copiedCode, setCopiedCode] = useState(false);
+
+  const copyPixKey = () => {
     if (siteConfig.pixKey) {
       navigator.clipboard.writeText(siteConfig.pixKey);
+      setCopiedKey(true);
+      setTimeout(() => setCopiedKey(false), 2000);
+    }
+  };
+
+  const copyPixCode = () => {
+    if (siteConfig.pixCopiaECola) {
+      navigator.clipboard.writeText(siteConfig.pixCopiaECola);
+      setCopiedCode(true);
+      setTimeout(() => setCopiedCode(false), 2000);
     }
   };
 
@@ -35,23 +49,34 @@ export default function ListaPresentes() {
         <h3 className="font-serif text-2xl md:text-3xl text-olive-950 font-semibold mb-5">PIX</h3>
         {siteConfig.pixKey ? (
           <>
-            <div className="bg-cream rounded-xl p-5 mb-5 border border-olive-dark/10">
-              <div className="w-44 h-44 mx-auto bg-olive-50/50 rounded-xl flex items-center justify-center text-gray-warm text-body border border-olive-dark/10">
-                QR Code
-              </div>
-            </div>
-            <p className="text-body text-gray-dark mb-2">Chave PIX:</p>
-            <p className="text-body-lg font-medium text-olive-950 break-all mb-5">
+            <p className="text-body text-gray-dark mb-2">Chave PIX (e-mail):</p>
+            <p className="text-body-lg font-medium text-olive-950 break-all mb-4 bg-cream rounded-lg px-4 py-3 border border-olive-dark/10">
               {siteConfig.pixKey}
             </p>
             <button
               type="button"
-              onClick={copyPix}
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-olive-950 text-white-off rounded-xl font-semibold hover:bg-olive-dark transition-all duration-300 shadow-premium"
+              onClick={copyPixKey}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-olive-950 text-white-off rounded-xl font-semibold hover:bg-olive-dark transition-all duration-300 shadow-premium mb-6 w-full justify-center"
             >
-              <Copy className="w-5 h-5" />
-              Copiar chave PIX
+              {copiedKey ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+              {copiedKey ? 'Copiado!' : 'Copiar chave PIX'}
             </button>
+
+            <div className="border-t border-olive-dark/10 pt-6">
+              <p className="text-body text-gray-dark mb-3">Ou copie o código PIX Copia e Cola:</p>
+              <button
+                type="button"
+                onClick={copyPixCode}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gold-premium text-olive-950 rounded-xl font-semibold hover:bg-gold-dark transition-all duration-300 shadow-premium w-full justify-center"
+              >
+                {copiedCode ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                {copiedCode ? 'Código copiado!' : 'Copiar código PIX'}
+              </button>
+            </div>
+
+            <p className="text-body-sm text-gray-warm mt-6">
+              Nome: Nicole Ferreira Cerqueira
+            </p>
           </>
         ) : (
           <p className="text-body text-gray-warm">
