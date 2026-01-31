@@ -9,7 +9,7 @@ const moments = [
   {
     year: '2023',
     title: 'Como nos conhecemos',
-    description: 'Cada um conta de um jeito — tem quem diga que foi por um amigo chamado Helbert… Mas na real: aplicativo, match, e primeiro encontro no bar Farrapos, na Berrini, em SP. E dali pra frente, tudo mudou.',
+    description: 'Cada um conta de um jeito — tem quem diga que foi por um amigo chamado Welbert… Mas na real: aplicativo, match, e primeiro encontro no bar Farrapos, na Berrini, em SP. E dali pra frente, tudo mudou.',
     image: '/farrapos.png',
     side: 'left',
   },
