@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Hotel, Car, CloudSun, Clock } from 'lucide-react';
+import { Hotel, Car, Clock } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import SectionTitle from './SectionTitle';
 import { siteConfig } from '@/lib/config';
@@ -41,21 +41,6 @@ const cards = [
         </p>
         <p className="text-body text-gray-dark mt-3">
           Waze/Google Maps: &quot;Recanto Miami Guarulhos&quot;
-        </p>
-      </>
-    ),
-  },
-  {
-    id: 'clima',
-    icon: CloudSun,
-    title: 'Clima',
-    content: (
-      <>
-        <p className="text-body text-gray-warm">
-          Novembro em Guarulhos: primavera/início do verão. Temperatura esperada: 20-28°C.
-        </p>
-        <p className="text-body text-gray-warm mt-2">
-          Possibilidade de chuva — levar guarda-chuva/sombrinha. Roupas leves e protetor solar.
         </p>
       </>
     ),
