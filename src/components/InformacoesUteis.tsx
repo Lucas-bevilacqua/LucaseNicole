@@ -67,11 +67,11 @@ const cards = [
     content: (
       <>
         <ul className="space-y-2 text-body text-gray-warm">
-          <li>18h30 — Chegada dos convidados (cheguem cedo!)</li>
-          <li>19h — Cerimônia</li>
-          <li>20h — Coquetel</li>
-          <li>21h — Jantar</li>
-          <li>22h — Festa</li>
+          <li>19h — Chegada dos convidados (cheguem cedo!)</li>
+          <li>19h20 — Cerimônia</li>
+          <li>20h30 — Coquetel</li>
+          <li>21h30 — Jantar</li>
+          <li>22h30 — Festa 🍾 (hora de brindar — e brindar, e brindar…)</li>
         </ul>
         <p className="text-body text-gray-dark mt-3">Horários aproximados. O importante: 19h em ponto! 😉</p>
       </>
