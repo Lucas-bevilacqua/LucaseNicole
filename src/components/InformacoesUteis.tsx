@@ -73,7 +73,7 @@ export default function InformacoesUteis() {
         {cards.map((card, i) => (
           <motion.article
             key={card.id}
-            className="card-luxe"
+            className={`card-luxe ${cards.length % 2 === 1 && i === cards.length - 1 ? 'md:col-span-2' : ''}`}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
